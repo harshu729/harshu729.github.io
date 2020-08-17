@@ -1,0 +1,117 @@
+/* 
+Project Name: Monthly Resolutions
+Client: One Month
+Author: Christopher Castig | @castig
+*/
+
+
+/*----------------------------------------------------------------------------- 
+01=BASE   
+-----------------------------------------------------------------------------*/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+.clear {
+	clear: both;
+}
+
+
+/*----------------------------------------------------------------------------- 
+02=LAYOUT  
+-----------------------------------------------------------------------------*/
+body {
+	background: url('../images/notebook.png'); /* add a fallback color of #d6d6d6 */
+	color: #000000;
+	font-family: 'Lato', sans-serif;
+	line-height: 1.7; /* line-height is unit-less */
+	font-size: 100%;
+}
+
+h1, h5 {
+	margin: 0px;
+}
+
+a {
+	color: red;
+	text-decoration: none;
+}
+
+#container {
+	width: 1000px;
+	margin: 0 auto 0 auto;
+}
+
+#header {
+	background: clear;
+	padding: 5px;
+}
+
+#main {
+	padding: 15px;
+	background-color: #fff;
+	width: 580px;
+	float: left;
+}
+
+#main h2 {
+	font-size: 40px;
+}
+
+
+#sidebar {
+	padding: 25px;
+	background-color: #fff;
+	width: 350px;
+	float: left;
+	margin-left: 15px;
+}
+
+blockquote {
+	font-size: 20px;
+	margin: 0px;
+	overflow: hidden;
+	position: relative;
+}
+
+}
+blockquote:before {
+    content: "";
+    border-left: 6px solid gray;
+    position: absolute;
+    bottom: 14px;
+    top: 13px;
+    left: 0;
+}
+
+#footer {
+	padding: 5px;
+	width: 500px;
+}
+
+/*----------------------------------------------------------------------------- 
+03=MAIN  
+-----------------------------------------------------------------------------*/
+
+.alignleft {
+	float: left;
+	margin: 0 15px 5px 0;
+}
+
+.alignright {
+	float: right;
+	margin: 0 0 0 0;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+/*----------------------------------------------------------------------------- 
+04=SIDEBAR 
+-----------------------------------------------------------------------------*/
+
