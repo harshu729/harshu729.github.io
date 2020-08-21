@@ -1,0 +1,255 @@
+/*
+ * General/Utility Styles
+*/
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+body {
+  margin: 0;
+  background: #ecf1f5;
+  font-family: "Open Sans", arial, sans-serif;
+  font-size: 0.875rem;
+  color: rgb(19, 129, 184);
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+a {
+  font-weight: bold;
+  color: rgb(255, 89, 95);
+  text-decoration: none;
+}
+strong {
+  font-weight: 600;
+}
+/*
+ * Button styles
+*/
+.button {
+  background: rgb(255, 89, 95);
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 0.75rem 5rem;
+  border-bottom: 1px solid rgb(227, 25, 29);
+  border-radius: 2px;
+  width: 95%;
+  margin: 0 auto;
+}
+/*
+ * Header and buldozer styles
+*/
+h1 {
+  font-size: 1.375rem;
+  color: #666a6c;
+}
+/*
+ * Header and buldozer styles
+*/
+header {
+  background: #ffffff;
+}
+header .logo {
+  border-right: 2px solid #bcc9c9;
+}
+.buldozer img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  background-size: contain;
+}
+/*
+ * .info styles
+*/
+.info .owner-details img {
+  margin-top: 5px;
+}
+.info,
+.container,
+.owner-details,
+.buldozer-details,
+h1,
+.location,
+.icon,
+.booking h2 {
+  margin-bottom: 10px;
+}
+.info,
+.button {
+  padding-bottom: 20px;
+}
+.info {
+  background: #edf2ef;
+  text-align: center;
+}
+.info .owner-details img {
+  border-radius: 50%;
+}
+.info h2.realtionship,
+.info h2.name {
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: #909597;
+}
+.info h2.name {
+  font-weight: bold;
+}
+.info .icon {
+  float: left;
+  width: 33.3%;
+}
+.info .icon img {
+  height: 30px;
+  margin-bottom: 0.1875rem;
+}
+.info .booking h2 {
+  font-weight: 600;
+  font-size: 1.37rem;
+}
+.info .booking .time {
+  font-weight: lighter;
+}
+/*
+* .details styles
+*/
+.details {
+  padding: 20px;
+}
+.details h3 {
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: center;
+  margin: 0.5rem 0 1.5rem 0;
+  color: rgb(86, 90, 92);
+}
+.about,
+.care {
+  border-bottom: 1px solid rgb(171, 164, 164);
+}
+.details,
+.about p {
+  font-size: 0.81rem;
+  line-height: 1.375rem;
+  color: #565a5c;
+}
+.details .about a.contact {
+  margin: 0.9375rem 0;
+  display: block;
+}
+.care {
+  padding: 10px 0 10px 0;
+}
+.care h4 {
+  margin-bottom: 10px;
+}
+.details .photos img {
+  width: 100%;
+  padding: 1rem 0 1.25rem 0;
+}
+@media only screen and (min-width: 1060px) {
+  .container {
+    width: 1040px;
+    margin: 0 auto;
+  }
+  .column {
+    float: left;
+  }
+  .info .buldozer-details,
+  .icons {
+    margin-top: 8px;
+  }
+
+  .icons {
+    text-align: center;
+  }
+
+  .info .profile {
+    width: 660px;
+    margin-top: 30px;
+  }
+  .info .booking {
+    width: 380px;
+  }
+  .info .owner-details {
+    width: 30%;
+  }
+  .info .buldozer-details {
+    width: 70%;
+    text-align: left;
+  }
+  .info .profile {
+    border-right: 2px solid #dce0e0;
+  }
+  .info .booking {
+    margin-top: 50px;
+  }
+  .info .button {
+    width: 80%;
+    margin: auto;
+  }
+/*
+* .details styles
+*/
+  .details {
+    width: 655px;
+    margin: 0 auto 0 auto;
+  }
+  .details .main {
+    width: 690px;
+  }
+  .details h4 {
+    width: 46px;
+  }
+  .details .about {
+    text-align: left;
+  }
+  .details .care .column,
+  .details .column {
+    margin-right: 0.62rem;
+  }
+  .details .column .diet {
+    margin-right: 100px;
+  }
+  .details li img {
+    padding-right: 0.5rem;
+  }
+  .info-two {
+  height: 130px;
+  margin-top: 28px;
+  }
+
+  .info-left {
+    width: 170px;
+    float: left;
+  }
+
+  .info-mid {
+    width: 260px;
+    float: left;
+  }
+
+  .info-right {
+    width: 225px;
+    float: left;
+  }
+
+  .contact {
+    font-size: 16px;
+  }
+  /*
+* .photo styles
+*/
+  .details .photos {
+    text-align: center;
+  }
+  .details .photos img {
+    display: inline;
+    width: 200px;
+    margin: 20px 0.85rem;
+  }
+}
+}
