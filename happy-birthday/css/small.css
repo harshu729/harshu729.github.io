@@ -10,3 +10,8 @@ aside.right, aside.left {
 	text-align: center;
 	float: inherit;
 }
+
+iframe {
+	width: 100%;
+	height: 450px;
+}
