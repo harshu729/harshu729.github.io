@@ -112,6 +112,7 @@ aside {
 
 section.intro, section.contact {
   padding: 40px;
+  overflow: hidden;
 }
 section.intro {
   background-color: #fff;
@@ -119,4 +120,8 @@ section.intro {
 
 iframe {
   width: 560px;
+}
+
+.contact {
+  background: lightgrey;
 }
