@@ -22,7 +22,7 @@ document.querySelector(".js-userinput").addEventListener('keyup',function(e){
 
 /*Do the data stuff with the API*/
 
-var url = "http://api.giphy.com/v1/gifs/search?q=funny+cat&api_key=dc6zaTOxFJmzC";
+var url = "https://api.giphy.com/v1/gifs/search?q=funny+cat&api_key=dc6zaTOxFJmzC";
 
 // AJAX Request
 var GiphyAJAXCall = new XMLHttpRequest();
