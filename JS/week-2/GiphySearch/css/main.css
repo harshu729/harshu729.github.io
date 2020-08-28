@@ -2,6 +2,14 @@ body {
 	width: 80%;
 	max-width: 1024px;
 	margin: 0 auto;
+	background: url('../images/bg-dark.jpg');
+	/* the follow is the code to have the image display as a full page */
+	background-position: center;
+	background-attachment: fixed;
+	-webkit-background-size: cover; /* the next 3 lines are "browser prefixes", they are necessary to include for CSS3 techniques */
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 .container-padding50 {
@@ -14,6 +22,7 @@ body {
 	padding: 20px;
 	font-size: 16px;
 	font-family: Helvetica, sans-serif;
+	float: left;
 }
 
 .container-button {
@@ -24,7 +33,7 @@ body {
 	color: white;
 	font-size: 16px;
 	font-family: Helvetica, sans-serif;
-
+	float: left;
 	border: 1px solid green;
 	border-radius: 5px;
 }
@@ -40,3 +49,25 @@ body {
 .js-container img {
 	display: inline-flex;
 }*/
+
+@media only screen and (max-width: 1060px) {
+	
+	body {
+	width: 100%;
+	}
+
+/*	.js-go {
+		float: right;
+	}
+
+	.container-marginleftright {
+		margin-left: 20px;
+		margin-right: 20px;
+	}*/
+
+	.container-button {
+	padding: 20px;
+	border-radius: 50px;
+	float: right;
+	}
+}
