@@ -1,7 +1,5 @@
 body {
-	width: 80%;
-	max-width: 1024px;
-	margin: 0 auto;
+
 	background: url('../images/bg-dark.jpg');
 	/* the follow is the code to have the image display as a full page */
 	background-position: center;
@@ -11,13 +9,18 @@ body {
 	-o-background-size: cover;
 	background-size: cover;
 }
+.con{
+	margin: 0 auto 0 auto;
+	width: 80%;
+	}
+
 
 .container-padding50 {
 	padding-top: 50px;
 }
 
 .container-textinput {
-	width: 80%;
+	width: 65%;
 	display: inline-block;
 	padding: 20px;
 	font-size: 16px;
@@ -26,7 +29,7 @@ body {
 }
 
 .container-button {
-	width: 10%;
+	width: 20%;
 	display: inline-block;
 	padding: 20px;
 	background-color: green;
@@ -56,18 +59,17 @@ body {
 	width: 100%;
 	}
 
-/*	.js-go {
+
+	.container-button {
+		padding: 20px;
 		float: right;
 	}
 
-	.container-marginleftright {
-		margin-left: 20px;
-		margin-right: 20px;
-	}*/
+	.container-textinput {
+		font-size: 35px;
+	}
 
 	.container-button {
-	padding: 20px;
-	border-radius: 50px;
-	float: right;
+		font-size: 35px;
 	}
 }
