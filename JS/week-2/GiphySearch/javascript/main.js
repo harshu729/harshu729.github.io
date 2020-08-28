@@ -1,10 +1,10 @@
 /*Grab the input value*/
 
+var word = "";
 
 document.querySelector(".js-go").addEventListener('click', function(e){
 	var input = document.querySelector("input").value;
-	var word = input.split(" ",2);
-	alert(word);
+	word = input.split(" ",2);
 	pushToDOM(word);
 });
 
@@ -21,7 +21,7 @@ document.querySelector(".js-userinput").addEventListener('keyup',function(e){
 
 
 /*Do the data stuff with the API*/
-
+alert(word);
 var url = "https://api.giphy.com/v1/gifs/search?q=funny+cat&api_key=dc6zaTOxFJmzC";
 
 // AJAX Request
