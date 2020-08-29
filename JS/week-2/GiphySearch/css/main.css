@@ -36,7 +36,7 @@ body {
 	color: white;
 	font-size: 16px;
 	font-family: Helvetica, sans-serif;
-	float: left;
+	float: right;
 	border: 1px solid green;
 	border-radius: 5px;
 }
