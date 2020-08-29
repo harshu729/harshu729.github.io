@@ -38,14 +38,14 @@ function search(word){
 	function pushToDOM(input) {
 
 		var response = JSON.parse(input);
-
 		var imageUrls = response.data;
+		var container = document.querySelector(".js-container");
 		
 		imageUrls.forEach(function(image){
 			var src = image.images.fixed_height.url;
 
 			console.log(src);
-			var container = document.querySelector(".js-container");
+			
 			container.innerHTML += "<img src=" + src + ">"; 
 
 		});
