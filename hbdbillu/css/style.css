@@ -90,14 +90,11 @@ h2 {
 
 aside.left{
   float: left;
+  margin-right: 24px;
 }
 aside.right{
   float: right;
   margin-left: 24px;
-}
-
-aside {
-  margin-right: 24px;
 }
 
 /*
@@ -136,3 +133,12 @@ iframe {
 canvas {
   background: black;
 }
+
+/*
+ * Extra Styles
+*/
+
+/*.paddingtopbottom {
+  padding-top: 50px;
+  padding-bottom: : 50px;
+}*/
