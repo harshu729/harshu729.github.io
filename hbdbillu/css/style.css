@@ -70,7 +70,6 @@ h2 {
 .container {
   width: 900px;
   margin: 120px auto;
-  border-radius : 20px 20px 0 0;
   padding: 20px;
 }
 
@@ -111,10 +110,11 @@ aside.right{
 section.intro, section.contact {
   padding: 40px;
   overflow: hidden;
-  /*margin-top: 50px;*/
+
 }
 section.intro {
   background-color: #fff;
+   background: url(../images/bubble-bg.png);
 }
 
 iframe {
@@ -138,7 +138,7 @@ canvas {
  * Extra Styles
 */
 
-/*.paddingtopbottom {
+.paddingtopbottom {
   padding-top: 50px;
   padding-bottom: : 50px;
-}*/
+}

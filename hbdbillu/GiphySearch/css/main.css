@@ -1,0 +1,78 @@
+body {
+
+	background: url('../images/bg-billu.png');
+	/* the follow is the code to have the image display as a full page */
+	background-position: center;
+	background-attachment: fixed;
+	-webkit-background-size: cover; /* the next 3 lines are "browser prefixes", they are necessary to include for CSS3 techniques */
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.con {
+	margin: 0 auto 0 auto;
+	width: 80%;
+
+	}
+.container {
+	margin-bottom: 70px;
+}
+
+.container-padding50 {
+	padding-top: 50px;
+}
+
+.container-textinput {
+	width: 65%;
+	display: inline-block;
+	padding: 20px;
+	font-size: 16px;
+	font-family: Helvetica, sans-serif;
+	float: left;
+}
+
+.container-button {
+	width: 20%;
+	display: inline-block;
+	padding: 20px;
+	background-color: green;
+	color: white;
+	font-size: 16px;
+	font-family: Helvetica, sans-serif;
+	float: right;
+	border: 1px solid green;
+	border-radius: 5px;
+}
+
+.container-image {
+	width: 30%;
+	display: block;
+	float: left;
+	margin-right:3%;
+}
+
+
+.js-container {
+	margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1060px) {
+	
+	body {
+	width: 100%;
+	}
+
+
+	.container-button {
+		padding: 20px;
+		float: right;
+	}
+
+	.container-textinput {
+		font-size: 26px;
+	}
+
+	.container-button {
+		font-size: 26px;
+	}
+}

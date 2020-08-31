@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Factorial+</title>
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap" rel="stylesheet">
+</head>
+ 
+<body style = "text-align:center;">  
+    <div id="container">
+
+    	<!-- Factorial -->
+	    <p>
+	    <fieldset>
+	    	<legend> 1. Factorial</legend>
+	    	<p>Click on the button to calculate the Factorial</p>
+	    	<input id="inputno1" type="text" name="inputno">
+		    <br><br>
+		    <button onclick = "fac();"> Click Here </button>
+
+		    <p id="showans1" style = "color:#fff; font-size: 20px; font-weight: bold;"></p>
+	    </fieldset>
+		</p> 
+	    
+	    <!-- /Factorial -->
+
+
+	    <!-- Fibonacci -->
+	    <p>
+	    <fieldset>
+	    	<legend>2. Fibonacci</legend>
+	    	<p>Click on the button to calculate the Fibonacci</p>
+	    	<input id="inputno2" type="text" name="inputno">
+		    <br><br>
+		    <button onclick = "fib();"> Click Here </button>
+
+		    <p id="showans2" style = "color:#fff; font-size: 20px; font-weight: bold;"></p>
+		</fieldset>
+
+		</p>
+		    
+	    <!-- /Fibonacci -->
+
+
+	    <!-- Armstrong number -->
+	    <p>
+	    <fieldset>
+	    	<legend>3. Armstrong Number</legend>
+	    	<p>Click on the button to calculate the Armstrong Number</p>
+	    	<input id="inputno3" type="text" name="inputno">
+		    <br><br>
+		    <button onclick = "arm();"> Click Here </button>
+
+		    <p id="showans3" style = "color:#fff; font-size: 20px; font-weight: bold;"></p>
+	    </fieldset>
+		</p>
+	    <!-- /Armstrong number -->  
+	    
+    </div>
+    <script language="JavaScript">
+
+        function factorial(n) { 
+            if (n===0) {  
+                return 1;  
+            } 
+            else {  
+                return n * factorial(n-1);  
+            }
+        } 
+          
+        function fac() {
+        	var showans1 = document.getElementById("showans1");  
+        	var n1 = document.getElementById("inputno1").value;
+            answer1 = factorial(n1);
+            showans1.innerHTML = "Factorial of " + n1 + " is " + answer1;
+        }  
+
+        function fibonacci(n) {
+		  	if (n===1) {
+		    	return [0, 1];
+		  	} 
+		  	else {
+		    	var s = fibonacci(n - 1);
+		    	s.push(s[s.length - 1] + s[s.length - 2]);
+		    	return s;
+		  	}
+			};
+
+		function fib() {
+			var showans2 = document.getElementById("showans2");  
+        	var n2 = document.getElementById("inputno2").value;
+        	answer2 = fibonacci(n2);
+            showans2.innerHTML = "Fibonacci of " + n2 + " is " + answer2; 
+        }
+
+        function armstrong(n) {
+        	var z,e,x,d=0;
+			x=n;
+			while(z>0) {
+				e=x%10;
+				d=d+(e*e*e);
+				x=parseInt(x/10);
+			}
+			if(n==d) {
+				return "Given number " + n + " is amstrong number";
+			}
+			
+			else {
+				return "Given number " + n + " is not an amstrong number";
+			}
+        }
+        function arm() {
+        	var showans3 = document.getElementById("showans3");  
+        	var n3 = document.getElementById("inputno3").value;
+        	answer3 = armstrong(n3);
+            showans3.innerHTML = answer3; 
+        }
+
+        
+		
+
+    </script>  
+</body>  
+</html>

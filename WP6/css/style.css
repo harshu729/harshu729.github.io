@@ -1,0 +1,49 @@
+/* 
+
+Project Name: Template
+Client: Cookie Monster
+Author: Harshit Sharma | www.twitter.com/horshit | findsharma.me
+
+*/
+
+body {
+	background: url('../images/cookie-monster.jpg');
+	/* the follow is the code to have the image display as a full page */
+	background-position: center;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+td input {
+	border-radius: 12px;
+}
+
+#container {
+	width: 30%;
+	background-color: black;
+	padding: 1em;
+}
+
+#display input {
+	border-radius: 3px;
+	color: #fff;
+}
+
+#calc {
+	align-content: center;
+	padding: 3em;
+	margin-right: 10px;
+}
+
+/*
+ *	MEDIA QUERIES
+*/
+@media only screen and (max-width: 1060px) {
+  #container {
+    width: 100%;
+    margin-right: 0 auto 0 auto;
+  }
+}

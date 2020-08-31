@@ -10,8 +10,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
-  <body>
+  <body onclick="nayn();">
     <canvas id="canvas"></canvas>
+    <a href="audio/nayncat.mp3"></a>
+    <audio id="nyan" src="audio/nayncat.mp3" loop="loop"></audio>
     <div class="container">
       
       <section class="hero">
@@ -42,7 +44,7 @@
 
       <section class="contact">
         <aside class="left">
-          <img src="images/unicorn.png" alt="Unicorn">
+          <img src="images/vidisha-unicorn.jpg" alt="Vidisha is a Unicorn">
         </aside>
         <h2>Thursday, September 3rd!</h2>
         <p>Starts promptly at <time>04:20</time></p>
@@ -52,7 +54,7 @@
         </section>
 
         <section class="intro paddingtopbottom">
-          <h1>Do Visit:</h1><a href="C:\Users\harsh\Documents\GitHub\harshu729.github.io\JS\week-2\GiphySearch\index.html" target="_blank"><h2>GIFs for Vidisha</h2></a>
+          <h1>Do Visit:</h1><a href="GiphySearch\index.html" target="_blank"><h2>GIFs for Vidisha</h2></a>
           
         </section>
 
@@ -64,6 +66,20 @@
     </div>
   </body>
     <script type="text/javascript">
+
+      function nayn() {
+        var audio = document.getElementById("nyan");
+        audio.volume = 0.02;
+          if(audio.paused){
+            audio.play();
+          }
+          else {
+            audio.pause();
+          }
+          
+      }
+
+
     window.requestAnimFrame = (function(){
     return  window.requestAnimationFrame       || 
       window.webkitRequestAnimationFrame || 

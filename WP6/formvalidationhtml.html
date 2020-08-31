@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FormValidation</title>
+	<link rel="stylesheet" href="css/snormalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap" rel="stylesheet">
+	<style>
+		body {
+			color: #fff;
+		}
+		form {
+		  	font: 1em sans-serif;
+		  	max-width: 320px;
+		}
+
+		p > label {
+		  	display: block;
+		}
+
+		input {
+			background: lightgrey;
+		}
+
+		input[type="text"],
+		input[type="email"],
+		input[type="number"],
+		textarea,
+		fieldset {
+		  	width : 100%;
+		  	border: 1px solid brown;
+		  	box-sizing: border-box;
+		}
+
+		input:invalid {
+		  box-shadow: 0 0 5px 1px red;
+		}
+
+		input:focus:invalid {
+		  box-shadow: none;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<h1>FormValidation</h1>
+		<form>
+			<br>
+		    <fieldset>
+		      <legend>Do you have a Cat?<abbr title="This field is mandatory" aria-label="required">*</abbr></legend>
+
+		      <input type="radio" required name="cat" id="r1" value="yes"><label for="r1">Yes</label>
+		      <input type="radio" required name="cat" id="r2" value="no"><label for="r2">No</label>
+		    </fieldset><br><br>
+		    
+		    <label for="n2">How old are you?</label>
+		    <input type="number" min="12" max="120" step="1" id="n2" name="age" pattern="\d+"><br><br>
+
+		    <label for="t2">User id:<abbr title="This field is mandatory" aria-label="required">*</abbr></label>
+		    <input type="email" id="t2" name="email" ><br><br>
+
+		    <label for="n1">Name</label>
+		    <input type="text" name="name" id="n1"><br><br>
+
+		    <label for="n3">Password<abbr title="This field is mandatory" aria-label="required">*</abbr></label>
+		    <input type="text" id="n3" name="Password"><br><br>
+
+		    <label for="t4">Phone number<abbr title="This field is mandatory" aria-label="required">*</abbr></label>
+		  	<input type="text" name="phn" title="Error Message" pattern="[9]{1}[0-9]{9}"><br><br>
+
+		    <label for="t1">What's your favorite fruit?<abbr title="This field is mandatory" aria-label="required">*</abbr></label>
+		    <input type="text" id="t1" name="fruit" list="l1" pattern="[Bb]anana|[Cc]herry|[Aa]pple|[Ss]trawberry|[Ll]emon|[Oo]range"><br><br>
+
+		    <datalist id="l1">
+		      <option>Banana</option>
+		      <option>Cherry</option>
+		      <option>Apple</option>
+		      <option>Strawberry</option>
+		      <option>Lemon</option>
+		      <option>Orange</option>
+		    </datalist><br><br>
+
+		    <label for="t3">About</label>
+		    <textarea id="t3" name="msg" maxlength="140" rows="5"></textarea>
+		    <br><br>
+
+		    <button>Submit</button><br><br><br><br>
+
+		</form>
+	</div>
+</body>
+</html>
