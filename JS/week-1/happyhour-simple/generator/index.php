@@ -11,26 +11,6 @@
         var ideas = [
             'Code',
             'Play Minecraft',
-            'Watch YouTube',
-            'Go live on Twitch',
-            'Go outside',
-            'Play something new on Itch.io',
-            'Play a random game on Game Jolt',
-            'Play a Steam game',
-            'Check Twitter',
-            'Check Discord',
-            'Open and contribute to pull requests',
-            'Learn a new language',
-            'Eat food',
-            'Talk to a friend',
-            'Play CSGO ',
-            'Write a book',
-            'Make a scrapbook',
-            'Drink water',
-            'Check Instagram',
-            'Watch a movie',
-            'Make a virtual machine',
-            'Find someone and send them a "PogChamp" with absolutely no context'
         ];
 
         var randomNumber = Math.floor(Math.random()*ideas.length);
