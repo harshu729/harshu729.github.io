@@ -23,12 +23,3 @@ body {
 	background-color: black;
 	padding: 1em;
 }
-
-.blur { filter: url(#whereareyourglasses); }
-
-p.target { filter:url(#f3); }
-p.target:hover { filter:url(#f5); }
-b.target { filter:url(#f1); }
-b.target:hover { filter:url(#f4); }
-pre.target { filter:url(#f2); }
-pre.target:hover { filter:url(#f3); }
